@@ -1,18 +1,16 @@
 # osu! mp3 Collector
 
-This tiny script will search for `.mp3` files on your `osu` songs directory and collects it all into one folder for you to use.
+This tiny script will search for `.mp3` files on your _osu!_ songs directory and collects it all into one folder for you to use.
 
 ## How to use
 
-**IMPORTANT:** Before using, make sure you have extra free space with the same amount of your `osu` folder size. If your osu! folder size is 10 GB then you need extra 10 GB too on your disk.
+**IMPORTANT:** Before using, make sure you have extra free space with the same amount of your _osu!_ folder size. If your osu! folder size is 10 GB then you need extra 10 GB too on your disk.
 
-1. Copy [Mp3Collector.bat](Mp3Collector.bat) into your main `osu` directory.
+1. Clone [Mp3Collector.bat](Mp3Collector.bat) and put it inside your main _osu!_ directory.
 2. Modify the first line if needed (see below).
 3. Run it.
 
 Result file with be put inside `mp3` folder and renamed into the same beatmap folder name.
-
-    mp3/[beatmap folder name].mp3
 
 ---
 
