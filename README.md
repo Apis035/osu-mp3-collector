@@ -1,21 +1,28 @@
-# osu! mp3 Collector
+# osu! Mp3 Collector
 
-This tiny script will search for `.mp3` files on your _osu!_ songs directory and collects it all into one folder for you to use.
+This script will search for mp3 files inside osu! songs directory and dumps it into a single folder.
 
 ## How to use
 
-**IMPORTANT:** Before using, make sure you have extra free space with the same amount of your _osu!_ folder size. If your osu! folder size is 10 GB then you need extra 10 GB of free space on your disk.
+> [!WARNING]
+> Make sure you have extra free disk space of the size of your osu! folder. For example, if your osu! folder size is 10 GB then you need another free 10 GB free space on your disk.
 
 1. Copy [Mp3Collector.bat](Mp3Collector.bat) into your main _osu!_ directory.
-2. Modify the first line if needed (see below).
-3. Run it.
+   - Click on the "Download raw file" button to download.
+3. Modify the first line if needed (see below).
+4. Run it.
 
-Result file with be put inside `mp3` folder and renamed into the same beatmap folder name.
+The files will be put in a folder named with the same name as the dumped format.
 
-If you want the script to collect files with formats other than `.mp3`, modify the first line. For example:
+## Collecting other file formats
+
+If you want to collect other file formats like `.ogg` or `.mp4`, modify the first line of the script. You can use Notepad to do this. For example:
 
 ```batch
-for %%f in (mp3 jpg mp4) do (md %%f
+for %%f in (mp3 ogg mp4 avi png jpg) do (md %%f
 ```
 
-Adding `jpg mp4` into the `for` list will make the script also search for files with `.jpg` and `.mp4` format and collect them into their respective folders.
+Will collect every files with these formats found in the songs folder and dumps it into new folders contained for each file formats.
+
+> [!NOTE]
+> These are formats for audio (mp3, ogg), video (mp4, avi), image (png, jpg)
